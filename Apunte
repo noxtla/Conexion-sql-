@@ -1,0 +1,19 @@
+Como conectar una interfaz de java a una base de datos
+	
+•	Declarar 3 constantes
+o	Public static final string URL = “jdbc::mysql://localhost:3306/escuela?autoReconnet=true&useSSL=false”
+o	Public static final string usuario = “root”
+o	Public static final string password = “root”
+
+•	Crear un metodo de tipo conection getConection
+o	Public Connection getConnection () 
+o	Creas una variable de tipo connection que te va a regresar un true
+o	creas un try catch
+o	dentro del try solo van dos lineas
+o	Class.forName("com.mysql.jdbc.driver");
+o	conn = DriverManager.getConnection(URL,user,pass);
+
+•	Al final de la función retornas laConexion
+
+Para realizar la prueba agrega una vista con un botón
+Dentro del botón creas una variable de tipo Connection y le asignas toda la función get Conexion
